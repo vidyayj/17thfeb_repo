@@ -1,0 +1,17 @@
+---
+name: This is first workflow
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute a single command
+        run: echo "hello"
+       
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute all commands
+        run: |
+         hostname-s
+         echo "Bye"
